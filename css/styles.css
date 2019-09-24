@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background: #111;
+}
+
+.main .dot {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: #111;
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.main .dot:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: #1d1d1d;
+  box-shadow: 0 1px 4px #000;
+  transition: 1s ease-in-out;
+  border-radius: 50%;
+  
+}
+
+.main .dot:hover:before {
+  transition: 0s ease-in-out;
+}
+
+.main .dot:nth-child(9n+1):hover:before {
+    background: #f00;
+    box-shadow: 0 0 3px #f00,
+                0 0 10px #f00;
+  }
+
+  .main .dot:nth-child(9n+2):hover:before {
+    background: #0f0;
+    box-shadow: 0 0 3px #0f0,
+                0 0 10px #0f0;
+  }
+
+  .main .dot:nth-child(9n+3):hover:before {
+    background: #00f;
+    box-shadow: 0 0 3px #00f,
+                0 0 10px #00f;
+  }
+
+  .main .dot:nth-child(9n+4):hover:before {
+    background: #ff0;
+    box-shadow: 0 0 3px #ff0,
+                0 0 10px #ff0;
+  }
+
+  .main .dot:nth-child(9n+5):hover:before {
+    background: #0ff;
+    box-shadow: 0 0 3px #0ff,
+                0 0 10px #0ff;
+  }
+
+  .main .dot:nth-child(9n+6):hover:before {
+    background: #f0f;
+    box-shadow: 0 0 3px #f0f,
+                0 0 10px #f0f;
+  }
+
+  .main .dot:nth-child(9n+7):hover:before {
+    background: #e91e63;
+    box-shadow: 0 0 3px #e91e63,
+                0 0 10px #e91e63;
+  }
+
+  .main .dot:nth-child(9n+8):hover:before {
+    background: #00ffad;
+    box-shadow: 0 0 3px #00ffad,
+                0 0 10px #00ffad;
+  }
+
+  .main .dot:nth-child(9n+9):hover:before {
+    background: #f45103;
+    box-shadow: 0 0 3px #f45103,
+                0 0 10px #f45103;
+  }
